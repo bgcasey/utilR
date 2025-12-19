@@ -14,7 +14,7 @@ add_alberta_flag(dat, lat_col = "latitude", lon_col = "longitude")
 \item{lon_col}{Name of longitude column (default: "longitude")}
 }
 \value{
-Data frame with in_alberta column ("in" or "out")
+Data frame with in_alberta column (TRUE/FALSE logical)
 }
 \description{
 Uses rnaturalearth and sf to determine if each site is in Alberta.
