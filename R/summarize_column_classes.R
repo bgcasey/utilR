@@ -11,15 +11,17 @@
 #' values are the classes of the columns or NA if the column is
 #' missing in a data frame.
 #'
-#' @example
+#' @examples
 #' # Example usage:
 #' all_data <- list(
-#'   df1 = data.frame(a = 1:3, b = letters[1:3]),
-#'   df2 = data.frame(a = 4:6, c = c(TRUE, FALSE, TRUE))
+#'     df1 = data.frame(a = 1:3, b = letters[1:3]),
+#'     df2 = data.frame(a = 4:6, c = c(TRUE, FALSE, TRUE))
 #' )
 #' column_classes_df <- generate_column_classes(all_data)
 #' print(column_classes_df)
 #'
+#' @importFrom stats setNames
+#' @export
 summarize_column_classes <- function(all_data) {
     # Step 1: Get column classes for each data frame in all_data
     column_classes <- lapply(all_data, function(df) {
