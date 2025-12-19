@@ -31,6 +31,7 @@
 #' # Check the first few columns:
 #' head(new_data)
 #'
+#' @export
 select_one_response <- function(gbm_data,
                                 chosen_response,
                                 response_vars,
