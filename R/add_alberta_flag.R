@@ -6,7 +6,9 @@
 #' @param lat_col Name of latitude column (default: "latitude")
 #' @param lon_col Name of longitude column (default: "longitude")
 #' @return Data frame with in_alberta column ("in" or "out")
-#' @import dplyr, sf, rnaturalearth
+#' @import dplyr
+#' @import sf
+#' @import rnaturalearth
 #' @export
 add_alberta_flag <- function(
     dat,
