@@ -17,6 +17,7 @@
 #' tif_directory <- "path/to/tif/files"
 #' tif_list <- read_tifs_to_list(tif_directory)
 #' print(names(tif_list)) # Display names of list elements
+#' @export
 read_tifs_to_list <- function(tif_directory, tif_list = list()) {
     # Step 1: List all TIF files in the specified directory
     tif_files <- list.files(
