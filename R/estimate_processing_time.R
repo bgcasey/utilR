@@ -27,6 +27,7 @@
 #' # 10,000 features
 #' estimate_processing_time(10000, 100, end_time, start_time)
 #'
+#' @export
 estimate_processing_time <- function(n_features,
                                      nsub,
                                      end_time,
