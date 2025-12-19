@@ -19,7 +19,7 @@ devtools::install_github("bgcasey/utilR")
 The package includes the following utility functions:
 
 ### Spatial Functions
-- `add_alberta_flag()` - Add Alberta flag to a site data frame using precise boundaries
+- `add_alberta_flag()` - Add Alberta flag to a site data frame using provincial boundaries
 - `extract_by_year()` - Extract raster values by year from spatial features
 - `parallel_extract_directory()` - Parallel extraction of raster data stored in a directory
 
