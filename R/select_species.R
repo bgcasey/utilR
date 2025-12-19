@@ -27,6 +27,8 @@
 #' # View result
 #' print(selected_species_df)
 #' }
+#' @importFrom dplyr %>% select
+#' @importFrom tidyselect all_of
 #' @export
 select_species <- function(data, species_name) {
     # [Step 1: Convert species name to snake_case to ensure consistency]
