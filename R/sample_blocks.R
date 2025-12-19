@@ -25,6 +25,8 @@
 #'     frac = 0.05, block_column = "block_id"
 #' )
 #' dplyr::count(df_sub, block_id)
+#' @importFrom dplyr %>% group_by sample_frac ungroup
+#' @importFrom rlang .data
 #' @export
 sample_blocks <- function(data, frac = 0.05, block_column) {
     # Step 1: Check that the block column exists in the data
