@@ -23,9 +23,11 @@ band names are derived from the TIF file names (without the
 \code{.tif} extension).
 }
 \examples{
+\dontrun{
 # Example usage of the function
 tif_directory <- "path/to/tif/files"
 multiband_raster <- read_tifs_to_multiband(tif_directory)
 print(multiband_raster) # Display the multiband raster object
 plot(multiband_raster) # Plot the raster bands
+}
 }
