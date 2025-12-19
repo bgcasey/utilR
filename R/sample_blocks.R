@@ -25,6 +25,7 @@
 #'     frac = 0.05, block_column = "block_id"
 #' )
 #' dplyr::count(df_sub, block_id)
+#' @export
 sample_blocks <- function(data, frac = 0.05, block_column) {
     # Step 1: Check that the block column exists in the data
     if (!block_column %in% names(data)) {
