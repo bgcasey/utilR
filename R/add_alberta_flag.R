@@ -9,6 +9,7 @@
 #' @import dplyr
 #' @import sf
 #' @import rnaturalearth
+#' @importFrom rlang .data
 #' @export
 add_alberta_flag <- function(
     dat,
