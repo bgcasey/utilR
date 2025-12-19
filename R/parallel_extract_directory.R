@@ -35,6 +35,8 @@
 #'
 #' # print(result)
 #'
+#' @importFrom parallel detectCores makeCluster clusterExport clusterEvalQ parLapply stopCluster
+#' @export
 parallel_extract_directory <- function(locations,
                                        tif_directory,
                                        bands,
@@ -54,16 +56,10 @@ parallel_extract_directory <- function(locations,
     )
     clusterExport(cl, varlist = to_export, envir = environment())
 
-    clusterEvalQ(cl, {
-        library(terra)
-        library(sf)
-    })
+    # Workers will lazily load namespaces when using :: operators.
 
     # Step 4: Parallel processing
     result <- parLapply(cl, locations, function(buffer) {
-        library(terra)
-        library(sf)
-
         # 4a. Read rasters
         rasters_list <- read_tifs_to_list(tif_directory)
 
