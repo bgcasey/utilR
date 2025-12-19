@@ -29,6 +29,7 @@ variable plus all other columns that are \emph{not} in the set of response
 variables.
 }
 \examples{
+\dontrun{
 # Suppose 'response_vars' contains c("sonchus_arvensis", "cirsium_arvense", ...)
 # and 'gbm_data' is your data frame with those columns plus predictors.
 
@@ -42,5 +43,6 @@ new_data <- select_one_response(
 
 # Check the first few columns:
 head(new_data)
+}
 
 }
