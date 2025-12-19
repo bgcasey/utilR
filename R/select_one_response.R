@@ -17,6 +17,7 @@
 #'   (plus all columns that were not in `response_vars`).
 #'
 #' @examples
+#' \dontrun{
 #' # Suppose 'response_vars' contains c("sonchus_arvensis", "cirsium_arvense", ...)
 #' # and 'gbm_data' is your data frame with those columns plus predictors.
 #'
@@ -30,6 +31,7 @@
 #'
 #' # Check the first few columns:
 #' head(new_data)
+#' }
 #'
 #' @export
 select_one_response <- function(gbm_data,
