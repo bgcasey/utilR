@@ -27,7 +27,7 @@ all_data <- list(
     df1 = data.frame(a = 1:3, b = letters[1:3]),
     df2 = data.frame(a = 4:6, c = c(TRUE, FALSE, TRUE))
 )
-column_classes_df <- generate_column_classes(all_data)
+column_classes_df <- summarize_column_classes(all_data)
 print(column_classes_df)
 
 }
