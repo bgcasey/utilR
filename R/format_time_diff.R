@@ -9,12 +9,13 @@
 #' @return Character. A formatted string showing the time
 #' difference in days, hours, minutes, and seconds.
 #'
-#' @example
+#' @examples
 #' # Example usage of the function
 #' start_time <- Sys.time()
-#' Sys.sleep(5)  # Simulate a delay
+#' Sys.sleep(5) # Simulate a delay
 #' end_time <- Sys.time()
 #' format_time_diff(start_time, end_time)
+#' @export
 format_time_diff <- function(start_time, end_time) {
     # Calculate time difference in seconds
     diff <- as.numeric(difftime(end_time, start_time,
