@@ -11,7 +11,7 @@ A reusable toolkit of personal R utility functions to support data processing, s
 You can install the package directly from GitHub:
 
 ```r
-devtools::install_github("yourusername/utilR")
+devtools::install_github("bgcasey/utilR")
 ```
 
 ## Functions
